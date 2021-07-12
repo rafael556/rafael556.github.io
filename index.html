@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="/assets/BlueLogo 2.svg" alt="Logo" />
+
+      <h1 class="titulo">uTask <i>2.0</i></h1>
+
+      <img class="config" src="/assets/engrenagem.svg" alt="Options" />
+    </header>
+
+    <div class="modal-bg">
+      <div class="modal-bg-capa"></div>
+      <div class="modal">
+        <h1>Configuração</h1>
+        <label for="toggle-switch" id="lb-switch">Dark Mode</label>
+        <form action="" id="switch">
+          <input type="checkbox" name="toggle-switch" id="dark-mode-switch" />
+        </form>
+        <label for="bc-image" id="lb-bc-image">Plano de Fundo</label>
+        <input
+          type="url"
+          name="bc-image"
+          id="bc-image"
+          value=""
+          autocomplete="off"
+        />
+        <button id="modal-b1">Limpar</button>
+        <button id="modal-b2">Aplicar</button>
+      </div>
+    </div>
+
+    <main class="principal">
+      <form action="">
+        <input
+          class="formulario"
+          type="text"
+          placeholder="Adicionar Tarefa..."
+        />
+        <button class="aditivo">
+          <img src="/assets/maizinho.svg" alt="" />
+        </button>
+      </form>
+
+      <section class="listas">
+        <div class="to-do">
+          <h1>To do</h1>
+          <ul></ul>
+        </div>
+
+        <div class="doing">
+          <h1>Doing</h1>
+          <ul></ul>
+        </div>
+
+        <div class="done">
+          <h1>Done</h1>
+          <ul></ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="cookies">
+        <p>
+          Você está de acordo com a nossa política de uso de cookies 🍪 para
+          amplificar sua experiência no site?
+        </p>
+        <div class="aceita">
+          <button class="fBotao">Não Concordo</button>
+          <button class="cookie">Sim, Concordo</button>
+          <button class="fecha"><img src="/assets/X.svg" alt="" /></button>
+        </div>
+      </div>
+    </footer>
+    <script src="/script.js"></script>
+  </body>
+</html>
