@@ -298,36 +298,6 @@ function refresh() {
   } else {
     console.log('vazio')
   }
-
-  //inserir no doing
-  let doing
-  try {
-    doing = document.cookie //Recebe os Cookies
-      .split('; ') //Separa eles por ;
-      .find(item => item.startsWith('doing=')) //Filtra o valor da key "bc-Image"
-      .split('=')[1] //Separa pelo = e assume a posição [1]
-  } catch {}
-
-  //   console.log(doing)
-  if (doing) {
-  } else {
-    // console.log('vazio')
-  }
-
-  //inserir no done
-  let done
-  try {
-    done = document.cookie //Recebe os Cookies
-      .split('; ') //Separa eles por ;
-      .find(item => item.startsWith('done=')) //Filtra o valor da key "bc-Image"
-      .split('=')[1] //Separa pelo = e assume a posição [1]
-  } catch {}
-
-  //   console.log(done)
-  if (done) {
-  } else {
-    // console.log('vazio')
-  }
 }
 
 window.onload = refresh
